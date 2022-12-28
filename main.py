@@ -1,7 +1,9 @@
 from aiogram import Bot, Dispatcher, executor, types
+import os
+from dotenv import load_dotenv
 
-
-TOKEN_API = '5887818155:AAGXj_UKxkRaFp_UcqmAQg3AKd02WYU_9fo'
+load_dotenv()
+TOKEN_API = os.getenv('TOKEN_API')
 
 
 
